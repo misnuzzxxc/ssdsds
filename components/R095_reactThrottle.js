@@ -1,4 +1,3 @@
-
 import React, { useState, useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
 import axios from 'axios';
@@ -50,7 +49,7 @@ const ImageUpload = () => {
             <input {...getInputProps()} />
             <p>이미지를 여기로 드래그하거나 클릭하여 업로드하세요.</p>
             <button
-              className="btn btn-primary"
+              className={`btn btn-primary ${isUploading ? 'disabled' : ''}`}
               onClick={() => {
                 if (!isUploading) {
                   const input = document.querySelector('input[type="file"]');
@@ -60,7 +59,7 @@ const ImageUpload = () => {
                 }
               }}
             >
-              업로드
+              {isUploading ? '업로드 중...' : '업로드'}
             </button>
           </div>
           {uploadedImage && (
@@ -86,9 +85,9 @@ const ReactThrottle = () => {
 
   return (
     <div>
-      <button onClick={throttleFunc}>Throttle Call</button>
+      <ImageUpload />
     </div>
   );
 };
 
-export { ImageUpload, ReactThrottle };
+export default ReactThrottle;

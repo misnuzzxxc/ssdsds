@@ -39,6 +39,7 @@ body{min-width:1280px; }
 .mb20{margin-bottom: 20px;}
 
 /*버튼*/
+
 .bt_ty1{display: inline-block;}
 .bt_ty1 a{font-size: 14px; color: #fff; height: 27px; line-height: 27px; background: #2b62c6; text-align: center; border-radius: 5px; padding: 0 7px; transition:.3s;}
 .bt_ty1 a:hover{background: #000;}
@@ -61,7 +62,7 @@ body{min-width:1280px; }
 .title_ty1 a{display: block; width: 22px; height: 22px; background: #fff; border: 1px solid #ddd; position: absolute; right: 0; top: 0; box-sizing: border-box;}
 .title_ty1 a:after{position: absolute; content:''; width: 22px; height: 22px; background: url(../img/sub/f_more.png) center no-repeat; right: -1px; top: -1px; transition:1.2s}
 .title_ty1 a:hover:after{transform:rotate(360deg)}
-.wi_au{width: auto !important; padding: 0 15px;}
+.wi_au{width: auto !important;  padding: 0 15px;}
 
 /*마진*/
 .mt31{margin-top: 31px;}
@@ -82,7 +83,7 @@ body{min-width:1280px; }
 .hd_left > li{float: left;  font-size: 15px; line-height: 45px; background: #000; color: white; text-align: center; font-weight: 400;; padding: 0 7px 0 30px; cursor: pointer;}
 .hd_left > li b{font-weight: 400; transition:.3s;}
 .hd_left > li:before{display: inline-block; content:''; width: 14px; height: 45px; background: url(../img/layout/htop_icon1.png) center no-repeat; vertical-align: top; margin-right: 11px; transition:.3s;}
-.hd_left > li.my2{width: 87px; text-align: left;}
+.hd_left > li.my2{width: 87px; text-align: left; padding: 0 6px;}
 .hd_left > li.my2:before{background: url(../img/layout/htop_icon2.png) center no-repeat; margin-right: 0;}
 .hd_left > li.my2 > b span{display: inline-block; margin-right: 8px; opacity: 0.8;}
 .hd_left > li > .box0{display: none; position: absolute; left: 0; top: 45px; background: #222; text-align: left; box-shadow:0px 0px 30px rgba(0,0,0,0.08); z-index: 100; }
@@ -132,15 +133,15 @@ body{min-width:1280px; }
 .in_ty1 span{position: relative; width: 50px; height: 55px; transition:.3s; display: block; float: left;}
 .in_ty1 span img{padding: 20px; transition:.3s;}
 .in_ty1 span.ic_2 img{padding-top: 26px;}
-.in_ty1 input{height: 55px; line-height: 55px; border: 0 !important; font-size: 16px; color: #9a9a9a; width: 355px; outline:none; padding-left: 18px;}
+.in_ty1 input{height: 54px; line-height: 55px; border: 0 !important; font-size: 16px; color: #9a9a9a; width: 355px; outline:none; padding-left: 18px; border-radius: 20px;}
 .in_ty1 input::placeholder {color: #9a9a9a; font-size: 16px; line-height: 55px; }
 
 .m_login ul{overflow: hidden; clear: both; margin-top: 20px; margin-bottom: 32px;}
 .m_login ul li{float: left;}
-.m_login ul li a{position: relative; text-align: left; font-size: 14px; line-height: 14px; color: rgba(255,255,255,0.8); padding: 10px 20px; font-weight: 400;; transition:.3s;}
+.m_login ul li a{position: relative; text-align: left; font-size: 14px; line-height: 14px; color: rgba(255,255,255,0.8); padding: 10px 40px; font-weight: 400;; transition:.3s;}
 .m_login ul li:first-child a:after{position: absolute; content:''; width: 1px; height: 9px; background: #fff; opacity: 0.15; right: 0; top: 50%; margin-top: -3px;}
 .m_login ul li:first-child a{padding-left: 0;}
-.m_login .s_bt{background: #fefe93; color: #222222; font-size: 20px; line-height: 65px; height: 65px; border: 0; width: 418px; transition:.3s; border-radius: 30px;}
+.m_login .s_bt{background: #fefe93; color: #222222; font-size: 20px; line-height: 65px; height: 60px; border: 0; width: 350px; transition:.3s; border-radius: 30px; }
 
 .btn_confirm_m{text-align: center; overflow: hidden; width: 418px; margin-top: 30px;}
 .bt_ty_m{width: 204px; display: block; float: left; margin-right: 10px; height: 65px; line-height: 65px; font-size: 20px; text-align: center; }
@@ -679,7 +680,7 @@ td.check_ty1 label:after{margin-top: 7px;}
 .gnb_admin > ul > li > a {padding: 0 25px;}
 
 /*유저관리 리스트*/
-.us_top{overflow: hidden; background: #; border: 1px solid #dedede; height: 69px; box-sizing: border-box; padding: 0px 40px; padding-right: 0; margin-bottom: 20px;}
+.us_top{overflow: hidden; background: gra; border: 1px solid #dedede; height: 69px; box-sizing: border-box; padding: 0px 40px; padding-right: 0; margin-bottom: 20px;}
 .user_sch{float: left;}
 .user_sch > label{font-size: 17px; font-weight: 500; color: #303030; line-height: 67px;}
 .user_sch > input{border: 0; border-bottom: 1px solid #ddd; font-size: 15px; color: #303030; margin: 20px 38px 0 18px; vertical-align: top; }
